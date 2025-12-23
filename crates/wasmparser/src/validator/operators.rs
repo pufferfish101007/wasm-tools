@@ -791,8 +791,8 @@ where
                             bail!(
                                 self.offset,
                                 "type mismatch: expected {}, found {}",
-                                ty_to_str(expected.into()),
-                                ty_to_str(actual.into())
+                                expected,
+                                actual
                             );
                         }
                     }
